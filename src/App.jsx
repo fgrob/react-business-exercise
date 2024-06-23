@@ -1,4 +1,4 @@
-import { createContext, useEffect } from "react";
+import { useEffect } from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import Database from "./views/Database";
 import Companies from "./views/Companies";
@@ -7,8 +7,6 @@ import { BiLoaderCircle } from "react-icons/bi";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchSales } from "./redux/salesSlice";
 import Company from "./views/Company";
-
-export const AppContext = createContext();
 
 function App() {
   const dispatch = useDispatch();
